@@ -42,7 +42,7 @@ df_selected_team = playerstats[(playerstats.Tm.isin(selected_team)) & (playersta
 st.header('Display Player Stats of Selected Team(s)')
 st.write('Data Dimension: ' + str(df_selected_team.shape[0]) + ' rows and ' + str(df_selected_team.shape[1]) + ' columns.')
 st.dataframe(df_selected_team)
-
+# change this line since the new version of streamlit do not support
 # Download NBA player stats data
 # https://discuss.streamlit.io/t/how-to-download-file-in-streamlit/1806
 def filedownload(df):
